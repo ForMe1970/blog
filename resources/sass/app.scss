@@ -1,0 +1,44 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/* 导航 */
+.navbar-header {
+  margin-bottom: 20px;
+}
+
+#searchs {
+  margin-bottom: 20px;
+  input {
+    float: left;
+    width: 80%;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  button {
+    float: left;
+    width: 19%;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+}
+
+/* 文章列表 */
+.articles-section {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  
+  .section-title {
+    color: #212529;
+    &:hover {
+      color: #337ab7;
+      text-decoration: none;
+    }
+  }
+}
+

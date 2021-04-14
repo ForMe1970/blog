@@ -18,6 +18,4 @@ Route::post('hook', function() {
     system('sudo git pull');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Blog\HomeController@index');
