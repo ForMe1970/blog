@@ -19,3 +19,4 @@ Route::post('hook', function() {
 });
 
 Route::get('/', 'Blog\HomeController@index');
+Route::get('/categorys/{category}', 'Blog\HomeController@categorys')->name('home.categorys');

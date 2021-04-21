@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('blog/home/index');
     }
+
+    public function categorys()
+    {
+      return view('blog/home/index');
+    }
 }

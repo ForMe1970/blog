@@ -10007,9 +10007,7 @@ h3 {
   margin-bottom: 20px;
 }
 
-#searchs {
-  margin-bottom: 20px;
-}
+/* 搜索 */
 #searchs input {
   float: left;
   width: 80%;
@@ -10019,6 +10017,10 @@ h3 {
   float: left;
   width: 19%;
   border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#categorys {
+  margin: 20px 0;
 }
 
 /* 文章列表 */
@@ -10034,4 +10036,11 @@ h3 {
 .articles-section .section-title:hover {
   color: #337ab7;
   text-decoration: none;
+}
+.articles-section .articles-footer > span {
+  font-size: 90%;
+}
+
+#tags button {
+  margin-right: 30px;
 }

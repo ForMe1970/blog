@@ -12,8 +12,8 @@
   margin-bottom: 20px;
 }
 
+/* 搜索 */
 #searchs {
-  margin-bottom: 20px;
   input {
     float: left;
     width: 80%;
@@ -26,6 +26,9 @@
   }
 }
 
+#categorys {
+  margin: 20px 0;
+}
 /* 文章列表 */
 .articles-section {
   border: 1px solid #ccc;
@@ -40,5 +43,16 @@
       text-decoration: none;
     }
   }
+
+  .articles-footer {
+    > span {
+      font-size: 90%;
+    }
+  }
 }
 
+#tags {
+  button {
+    margin-right: 30px;
+  }
+}
