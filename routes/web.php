@@ -29,5 +29,8 @@ Route::post('/admin/login', 'Admin\SessionController@store')->name('session.stor
 
 
 /** 后台首页 **/
-Route::get('/admin', 'Admin\HomeController@index')->name('home.index');
+Route::get('/admin', 'Admin\ArticlesController@index')->name('articles.index');
+
+/** 文章管理 **/
+Route::get('/admin/articles/create', 'Admin\ArticlesController@create')->name('articles.create');
 

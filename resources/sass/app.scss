@@ -7,6 +7,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//Bootstrap-icons
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
 html,body {
   height: 100%;
 }
@@ -85,16 +88,17 @@ html,body {
 }
 
 #body {
+  position: relative;
   height: 100%;
 }
 
 #menu {
-  position: relative;
-  width: 280px;
+  position: absolute;
+  width: 15%;
   height: 100%;
   left: 0;
   top: 0;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid $adminBorderColor;
   border-top: none;
   .list-group {
     display: block;
@@ -107,3 +111,59 @@ html,body {
   }
 }
 
+#iframe {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 85%;
+  height: 100%;
+  padding: 10px 15px 0 15px;
+}
+
+#filter {
+  border: 1px solid $adminBorderColor;
+  border-radius: 5px;
+  padding: 15px 10px;
+
+  #filter_form {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .filter-footer {
+      display: flex;
+      flex: 1;
+      flex-direction: row-reverse;
+      margin-top: 5px;
+    }
+  }
+  
+  label {
+    line-height: 2.5;
+  }
+
+  .form-group {
+    display: inline-flex;
+    margin: 0;
+  }
+  
+  .form-control {
+    flex: 1;
+  }
+}
+
+#operate_btns {
+  margin: 15px 0;
+}
+
+#create_article_form {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  form {
+    width: 500px;
+  }
+}

@@ -10,15 +10,11 @@
 <body>
   @include('admin.layouts._header')
   <div id="body">
-    <div id="menu">
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">博客管理</a>
-        <a href="#" class="list-group-item list-group-item-action">分类管理</a>
-        <a href="#" class="list-group-item list-group-item-action">标签管理</a>
-      </div>
+    @include('admin.layouts._aside')
+    <div id="iframe">
+      @yield('content')
     </div>
   </div>
-  
 </body>
 <script src="{{ mix('js/app.js') }}"></script>
 </html>
