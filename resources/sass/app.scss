@@ -7,6 +7,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+html,body {
+  height: 100%;
+}
+
+
 /* 导航 */
 .navbar-header {
   margin-bottom: 20px;
@@ -56,3 +61,49 @@
     margin-right: 30px;
   }
 }
+
+/* 后台管理 */
+
+/** 登录界面 **/
+.login-form {
+  margin-top: 200px;
+  .login-form-title {
+    text-align: center;
+  }
+}
+
+/** 首页 **/
+#nav_menu {
+  justify-content: space-between;
+  #navbarNavDropdown {
+    flex-grow: 0;
+  }
+
+  #user_dropdown_menu {
+    margin-top: 8px;
+  }
+}
+
+#body {
+  height: 100%;
+}
+
+#menu {
+  position: relative;
+  width: 280px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none;
+  .list-group {
+    display: block;
+    border-radius: 0;
+    height: 100%;
+    & > a {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+

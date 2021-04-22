@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-    <title>@yield('title', '为我博客') ---- 为我</title>
 		<meta name="viewport" content="width=device-width, intial-scale=1, user-scalable=no">
+    <title>@yield('title', '为我博客') ---- 为我</title>
 		<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 		<link rel="stylesheet" href="/editormd/css/editormd.css">
 	</head>

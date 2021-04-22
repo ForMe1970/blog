@@ -20,3 +20,14 @@ Route::post('hook', function() {
 
 Route::get('/', 'Blog\HomeController@index');
 Route::get('/categorys/{category}', 'Blog\HomeController@categorys')->name('home.categorys');
+
+/* 后台管理 */
+
+/** 登录界面 **/
+Route::get('/admin/login', 'Admin\SessionController@login')->name('session.login');
+Route::post('/admin/login', 'Admin\SessionController@store')->name('session.store');
+
+
+/** 后台首页 **/
+Route::get('/admin', 'Admin\HomeController@index')->name('home.index');
+
